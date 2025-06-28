@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header class="cabecalho">AGENDA DE CONTATOS</header>
+    <section>
+        <div class="principal">
+            <p>LOGO</p>
+            <input type="text" id="login" placeholder="USUÁRIO">
+            <input type="password" id="senha" placeholder="SENHA">
+            <button onclick="fazerLogin()">Entrar</button>
+        </div>
+    </section>
+
+    <script>
+        function fazerLogin() {
+            let login = document.getElementById("login").value;
+            let senha = document.getElementById("senha").value;
+
+            
+            if (login === "" && senha === "") {
+                alert("Favor inserir nome e semha de usuário");
+            }
+            else if (senha === "") {
+                alert("Favor inserir senha");
+            }
+            else if (login === "" ) {
+                alert("Favor inserir nome de usuário");
+            }
+            else if (login === "admin" && senha === "admin") {
+                window.location.href = "cadastro.html";
+            }
+            else if (login !== "admin" && senha !== "admin") {
+                alert("Usuário e senha incorretos!");
+            }
+
+            else if (login !== "admin") {
+                alert("Usuário incorreto!")
+            }
+            else if (senha !== "admin") {
+                alert("Senha incorreta!");
+            }
+        }
+    </script>
+</body>
+
+</html>
