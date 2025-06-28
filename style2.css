@@ -1,0 +1,183 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #04C9F4;
+    color: white;
+    font-size: x-large;
+    text-indent: 3em;
+    justify-content: left;
+}
+
+section {
+    height: 84vh;
+    padding-top: 1%;
+    padding-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.principal {
+    background-color: #D9D9D9;
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "nome sobrenome"
+        "endereco endereco"
+        "telefone telefone";
+    gap: 1em;
+    padding: 1em;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    color: #04C9F4;
+    font-size: x-large;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    height: 3em;
+    border: none;
+    font-size: large;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.nomep {
+    grid-area: nome;
+
+}
+
+.sobrenomep {
+    grid-area: sobrenome;
+}
+
+.enderecop {
+    grid-area: endereco;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.telefone {
+    grid-area: telefone;
+
+}
+
+.nomep,
+.sobrenomep,
+.enderecop,
+.telefone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.botoesp {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    gap: 2%;
+
+    padding-left: 2%;
+    align-items: stretch;
+    padding: 1em;
+
+}
+
+.botoes {
+    width: 30vh;
+    height: 20vh;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+}
+
+#incluir {
+    background-color: #068622;
+    color: white;
+}
+
+#editar {
+    background-color: #FD9800;
+    color: white;
+}
+
+#salvar {
+    background-color: #04C9F4;
+    color: white;
+}
+
+#cancelar {
+    background-color: white;
+    color: #04C9F4;
+}
+
+#excluir {
+    background-color: #F40404;
+    color: white;
+}
+
+.botoesb {
+    width: 60%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 10%;
+
+}
+
+.botoesn {
+    background-color: black;
+    width: 20vh;
+    height: 10vh;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: gray !important;
+    color: white !important;
+    cursor: not-allowed !important;
+}
+
+.botoesn:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: larger;
+}
